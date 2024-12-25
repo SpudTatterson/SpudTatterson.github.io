@@ -1,24 +1,40 @@
 <template>
   <div style="margin-bottom: 80px;">
-    <h1>Hello!</h1>
+    <h1>About Me</h1>
 
     <div class="paragraph">
       <div>
-        I'm <strong>John Matrix</strong>, a former Delta Force operative, now a hobbyist lumberjack.<br/>
-        I spend my days living alone with my daughter Jenny, and cutting trees and carrying trunks around to keep in shape.
+        I'm <strong style="font-family: 'Source Code Pro', monospace;">Aviv Hauyn</strong>, a Unity Game Developer with a passion for crafting engaging and immersive gaming
+        experiences.<br />
+        My journey started as a 3D artist in the Israeli Air Force, where I developed my technical and artistic expertise.
+        After completing a two-year Game Development and Design course at IAC, I joined the same college as a Unity Tutor,
+        helping students master game mechanics, coding, and problem-solving.
       </div>
 
-      <div style="margin-top: 20px;">I've worked on  <router-link to="/game-projects">stuff</router-link>, on <router-link to="/other-projects">other stuff</router-link>, and took part in <router-link to="/resume">a few things</router-link> as well.</div>
+      <div style="margin-top: 20px;">
+        I've worked on <router-link to="/game-projects">Projects</router-link> like <strong>Skolger</strong> (a base-building
+        colony management game) and <strong>Escape of the Doodis</strong> (a 3D Lemmings-inspired puzzle game). You can also explore my 
+        <router-link to="/other-projects">Tech & Tools</router-link> section, where I showcase standalone systems like my VAT 
+        Animator and Tutorial System. Check out <router-link to="/resume">my resume</router-link> for more details.
+      </div>
 
-      <div style="margin-top: 40px;">I'm <strong>currently looking for a job</strong> as a monk, like my good friend John Rambo did a few years back. You can reach me at <a href="mailto:johnmatrix@deltaforce.us">johnmatrix@deltaforce.us</a> or <router-link to="/contact">through here</router-link>.</div>
+      <div style="margin-top: 40px;">
+        I'm <strong>always open to new opportunities</strong> to collaborate and create something amazing. You can reach
+        me at <a href="mailto:avivhauyn@gmail.com">avivhauyn@gmail.com</a> or <router-link to="/contact">through
+          here</router-link>.
+      </div>
+
+      <div style="margin-top: 20px;">
+        When I'm not developing games or crafting tools, I enjoy exploring the outdoors through hiking – it’s where I find 
+        inspiration and recharge for my next creative challenge.
+      </div>
     </div>
 
     <div class="photo">
-      <img src="img/avatar.png" alt="Avatar of John" /> 
+      <img src="img/avatar.png" alt="Avatar of Aviv Hauyn" />
     </div>
 
     <div style="clear:both"></div>
-
   </div>
 </template>
 
@@ -33,7 +49,7 @@
   text-align: center;
 }
 
-@media only screen and (min-width: 620px){
+@media only screen and (min-width: 620px) {
   .paragraph {
     float: left;
   }
@@ -44,5 +60,4 @@
     padding-left: 80px;
   }
 }
-
 </style>

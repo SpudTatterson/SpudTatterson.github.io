@@ -1,41 +1,31 @@
 <template>
   <div>
-    
-    <h1>Let's get in touch</h1>
+    <h1>Let's Get in Touch</h1>
 
-    <div style="margin-bottom:40px;">I'm looking for a job !<br/>Feel free to contact me about any opportunity, or just to chat about cooking, kittens or anything else.</div>
+    <div style="margin-bottom:40px;">
+      I'm always open to discussing exciting opportunities in game development or anything related to Unity, Blender, or
+      indie game creation.<br />
+      Feel free to reach out!
+    </div>
 
     <ul>
       <li>
-        <i class="fa fa-user-circle-o fa-lg fa-fw"></i>
-        <a href="http://mywebsite.com" target="_blank">https://mywebsite.com</a>
-      </li>
-      <li>
         <i class="fa fa-envelope-o fa-lg fa-fw"></i>
-        <a href="mailto:my@email.com" target="_blank">my@email.com</a>
+        <a href="mailto:avivhauyn@gmail.com" target="_blank">avivhauyn@gmail.com</a>
       </li>
       <li>
         <i class="fa fa-linkedin fa-lg fa-fw" style="vertical-align: -5%;"></i>
-        <a href="https://www.linkedin.com/me" target="_blank">linkedin.com/me</a>
+        <a href="https://www.linkedin.com/in/avivhauyn" target="_blank">linkedin.com/in/avivhauyn</a>
       </li>
       <li>
         <i class="fa fa-github fa-lg fa-fw"></i>
-        <a href="https://github.com/me" target="_blank">github.com/me</a>
+        <a href="https://github.com/SpudTatterson" target="_blank">Check out my repos on GitHub</a>
       </li>
       <li>
         <i class="fa fa-gamepad fa-lg fa-fw"></i>
-        <a href="https://myself.itch.io" target="_blank">myself.itch.io</a>
-      </li>
-      <li>
-        <i class="fa fa-tumblr fa-lg fa-fw"></i>
-        <a href="https://myblog.tumblr.com" target="_blank">myblog.tumblr.com</a>
-      </li>
-      <li>
-        <i class="fa fa-steam fa-lg fa-fw"></i>
-        <a href="https://steamcommunity.com/id/me" target="_blank">steam.com/me</a>
+        <a href="https://spud-man.itch.io" target="_blank">Check out my itch.io</a>
       </li>
     </ul>
-
   </div>
 </template>
 
@@ -46,11 +36,11 @@ ul {
 }
 
 li {
-    line-height: 1.8em;
-    font-size: 1.2em;
-  }
+  line-height: 1.8em;
+  font-size: 1.2em;
+}
 
-@media only screen and (min-width: 620px){
+@media only screen and (min-width: 620px) {
   ul {
     padding-inline-start: 40px;
   }

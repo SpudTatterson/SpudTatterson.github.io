@@ -3,103 +3,111 @@
     <h1>Resume</h1>
 
     <div class="paragraph">
-      I'm <strong>John Matrix</strong>, a former Delta Force operative with lots of experience, lots of training and huge muscles.
-      <br />After graduating from kindergarten, I've been enrolled in the army for 25 years, where I learned to destroy things in an amazing number of ways.
-      <br />I joined the Delta Force because I thought it was Greek lessons, but I quickly adapted to this unexpected environment and became a key element.
-      <br />I love teamwork, but I can also go in solo depending on the mission requirements.
-      <br />
-      <br />Right now I'm trying to find inner peace after I've read some personal development books. I'm looking for a monk job so if you have any opportunity feel free to 
-      <router-link to="/contact">contact me</router-link>.
-      <br />
-      <br />Besides war, I'm passionate about firearms, martial arts, explosions, push-ups and flowers.
-
-      <div style="margin-top:20px; margin-bottom:20px;">
-        <a class="download-link" href="d/resume-en.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Download as PDF 🇬🇧</a>
-        <a class="download-link" href="d/cv-fr.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Télécharger en PDF 🇫🇷</a>
-        <div style="clear:both"></div>
-      </div>
+      I'm <strong style="font-family: 'Source Code Pro', monospace;">Aviv Hauyn</strong>, a Unity Game Developer with a solid background in C# programming, Unity
+      development, and 3D art.
+      I have hands-on experience developing games from start to finish, tackling technical challenges, and delivering
+      immersive gameplay experiences.
+      My journey started as a 3D Artist in the Israeli Air Force, and today, I help others as a Unity Tutor while building
+      innovative tools and systems in game development.
     </div>
+
     <div class="photo">
-      <img src="img/resume-photo.png" alt="Photo of John" />
+      <img src="img/resume-photo.png" alt="Photo of Aviv" />
     </div>
 
     <div style="clear:both"></div>
 
+    <div style="margin-top:20px; margin-bottom:20px; text-align:center;">
+      <a class="download-link" href="d/Aviv_Hauyn_Unity_Dev.pdf" target="_blank">
+        <i class="fa fa-download fa-lg fa-fw"></i> Download as PDF
+      </a>
+    </div>
+
     <div class="full-content">
-      <h2>Work experience</h2>
+      <h2>Work Experience</h2>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2018-2019</h4>
+      <h3>Unity Developer - Freelance</h3>
+      <h4>2024 - Present</h4>
+      <div>
+        - Collaborating with both recurring clients and one-time projects. <br />
+        - Adding new features, debugging, and optimizing Unity projects to improve performance and user experience. <br />
+        - Providing consultation on game design decisions to enhance the overall design quality.
+      </div>
+      <div class="tech-stack">
+        Tools: Unity, VSCode.
+      </div>
 
-      <div>It's classified so I can't speak about it.</div>
 
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
+      <h3>Unity Tutor - IAC College</h3>
+      <h4>2024 - Present</h4>
+      <div>
+        - Instructing students on Unity development, C# programming, game mechanics, and object-oriented
+        programming.<br />
+        - Assisting with debugging, optimization, and game design practices.
+      </div>
+      <div class="tech-stack">
+        Tools: Unity, VSCode, Blender, Substance Painter.
+      </div>
 
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2015-2017</h4>
+      <h3>3D Artist - Israeli Air Force</h3>
+      <h4>2021 - 2022</h4>
+      <div>
+        - Collaborated with developers to seamlessly integrate 3D assets into Unity, ensuring optimal functionality and
+        visual fidelity. <br />
+        - Identified and resolved technical challenges during asset creation, streamlining the workflow and improving team
+        communication between artists and developers. <br />
+        - Designed and developed small, custom tools in Blender using Python to automate tasks and enhance production
+        efficiency.
+      </div>
 
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Even more Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
-
-      <h3>Operation Classified - Delta Force</h3>
-      <h4>2012-2015</h4>
-
-      <div>It's classified so I can't speak about it.</div>
-
-      <div class="tech-stack">Firearms, knives, grenades, Hummer vehicle, parachute,...</div>
+      <div class="tech-stack">
+        Tools: Unity, Blender, Substance Painter.
+      </div>
 
       <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-group">
+          <h3>Development</h3>
+          <SkillRate name="Unity" :rate="5" />
+          <SkillRate name="C# Programming" :rate="4" />
+          <SkillRate name="OOP" :rate="4" />
+          <SkillRate name="Design Patterns" :rate="4" />
+          <SkillRate name="Shaders" :rate="3" />
+          <SkillRate name="Debugging & Optimization" :rate="4" />
+        </div>
 
-      <div class="skill-set">
-        <h3>Lethal</h3>
-        <SkillRate name="Handguns" :rate="5" />
-        <SkillRate name="Rifles" :rate="5" />
-        <SkillRate name="Shotguns" :rate="5" />
-        <SkillRate name="Machineguns" :rate="5" />
-        <SkillRate name="Missile launchers" :rate="5" />
-        <SkillRate name="Knives" :rate="5" />
-        <SkillRate name="Hand to hand combat" :rate="5" />
-      </div>
+        <div class="skill-group">
+          <h3>3D Art Tools</h3>
+          <SkillRate name="Blender" :rate="4" />
+          <SkillRate name="Substance Painter" :rate="4" />
+          <SkillRate name="Photoshop" :rate="4" />
+        </div>
 
-      <div class="skill-set">
-        <h3>Non-lethal</h3>
-        <SkillRate name="Sneaking" :rate="1" />
-        <SkillRate name="Negotiation" :rate="1" />
-        <SkillRate name="Seduction" :rate="1" />
-        <SkillRate name="Sense of humor" :rate="2" />
+        <div class="skill-group">
+          <h3>Project Management</h3>
+          <SkillRate name="Git Version Control" :rate="4" />
+          <SkillRate name="Trello" :rate="4" />
+          <SkillRate name="Milanote" :rate="4" />
+        </div>
       </div>
-      <div style="clear:both" />
 
       <h2>Education</h2>
-
-      <h3>Kindergarten - 1985</h3>
-      <h4>Kindergarten degree</h4>
-      <div>Specialty in bullying and fighting (58 wins, 58 K-O, 0 losses)</div>
+      <h3>Game Development & Design - IAC College, Tel Aviv</h3>
+      <h4>Two-Year Program</h4>
+      <div>
+        - Specialized in Unity development, C# programming, and game design.<br />
+        - Completed full games each semester, including game mechanics, UI design, and shaders.
+      </div>
 
       <h2>Languages</h2>
-
-      <h3>American</h3>
-      <div>Basic knowledge but I know lots of one-liners</div>
-
-      <h3>That's it</h3>
-      <div>Who needs another language when you speak American?</div>
-
-
-      <h2>Besides...</h2>
-      <div>
-        <h3>I ❤️ Violence</h3>
-        <div>I find it really soothing to just shoot at bad guys</div>
-
-        <h3>I 🧡 Sports</h3>
-        <div>I used to be thin but then I ingested 10 kilos of steroids and proteins a day while doing 1000 push-ups.</div>
-
-        <h3>I 💛 Politics</h3>
-        <div>I hope I can have a career here someday but I might have temper issues.</div>
-
-        <h3>I 💚 Flowers</h3>
-        <div>Especially the big ones, with the trunk and leaves.</div>
-
+      <div class="languages">
+        <!-- <h3>English</h3>
+        <div>Full Professional Proficiency</div>
+        <h3>Hebrew</h3> -->
+        <div>
+          <div><strong class="highlight">English - </strong>Full Professional Proficiency</div>
+          <div><strong class="highlight">Hebrew - </strong>Native Speaker</div>
+        </div>
       </div>
     </div>
   </div>
@@ -125,6 +133,7 @@ h2 {
   padding: 0px;
   padding-top: 50px;
 }
+
 h3 {
   font-weight: 100;
   font-size: 1.6em;
@@ -132,6 +141,7 @@ h3 {
   padding: 0px;
   padding-top: 30px;
 }
+
 h4 {
   font-weight: 100;
   font-size: 1.3em;
@@ -141,21 +151,34 @@ h4 {
   font-style: italic;
 }
 
+.Language-Title {
+  font-weight: 100;
+  font-size: 1.6em;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+}
+
 .paragraph {
   max-width: 700px;
 }
 
-.download-link {
-  float:left;
-  margin-right: 50px;
+.highlight {
+  font-size: 1.4em;
+  /* Controls the strong text size */
+}
+
+@media only screen and (min-width: 620px) {
+
+  .download-link {
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+  }
 }
 
 .full-content div {
   max-width: 800px;
-}
-
-.skill-set h3 {
-  padding-bottom: 10px;
 }
 
 .photo img {
@@ -165,6 +188,7 @@ h4 {
 
 .tech-stack {
   font-style: italic;
+  margin-top: 10px;
 }
 
 .photo {
@@ -172,7 +196,40 @@ h4 {
   text-align: center;
 }
 
-@media only screen and (min-width: 620px){
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill-group {
+  flex: 1;
+  margin-right: 20px;
+  min-width: 250px;
+}
+
+.skill-group h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.centered-header {
+  text-align: center;
+}
+
+.languages {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.languages h3 {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 620px) {
   .paragraph {
     float: left;
   }
@@ -181,11 +238,6 @@ h4 {
     float: left;
     padding: 30px;
     padding-left: 80px;
-  }
-
-  .skill-set {
-    float: left;
-    padding-right: 60px; 
   }
 }
 </style>
