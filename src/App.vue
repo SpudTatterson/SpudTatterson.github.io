@@ -26,12 +26,12 @@ export default Vue.extend({
   }
 });
 
-// Preload heavy images or gifs that are used in other pages
-Helpers.preloadImages([
-  "img/projects/project-1-icon.png",
-  "img/projects/project-2-icon.png",
-  "img/projects/project-3-icon.png"
+// Preload heavy assets used in other pages
+Helpers.preloadAssets([
+    "img/projects/Doodis/Cover.mp4",
+    "img/projects/AlienAnnihilationVE/Cover.mp4",
 ]);
+
 
 </script>
 
@@ -49,13 +49,14 @@ html, body {
   background-color: @contentBgColor;
   color: @textColor;
 
-  font-family: 'Karla', Helvetica, Arial, sans-serif;
+  // font-family: 'Karla', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.6em;
-  text-align: justify;
+  // text-align: justify;
 }
 
 h1, h2, h3, h4, h5 {
@@ -98,7 +99,7 @@ h1 {
   }
 
   .main {
-    padding: 0px 40px 40px 180px;
+    padding: 0px 40px 40px 40px;
   }
 
   .main, .header, .footer {
