@@ -54,7 +54,7 @@ jobs:
           cp -R dist/* docs/
 
           # Add CNAME file 
-          echo "www.avivhauyn.com" > docs/CNAME
+          echo "avivhauyn.com" > docs/CNAME
 
           # Commit changes
           git add docs
