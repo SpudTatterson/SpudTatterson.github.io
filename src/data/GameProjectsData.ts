@@ -343,7 +343,7 @@ export default [
   
   
                             `, "#0c6654", true, true),
-    new ProjectData("project-3", "Alien Annihilation Village Editon",
+    new ProjectData("project-3", "Alien Annihilation : Village Editon",
         "img/projects/AlienAnnihilationVE/Cover.mp4", "video",
         `
     <div class="paragraph">
@@ -474,5 +474,5 @@ export default [
      
   </div>
   
-                            `, "#1dde8d", false, true),
+                            `, "#19cc81", false, true),
 ];
