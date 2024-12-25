@@ -1,15 +1,19 @@
 <template>
   <div>
-    <h1>Other stuff</h1>
+    <h1>Tech & Tools</h1>
 
     <div style="margin-bottom: 30px;">
-      And here are some other stuff I've made or heavily contributed to, which are totally different than the stuff from earlier.
+      Explore the Unity tools I’ve developed, in-depth overviews of different systems i developed.
+      This section highlights my technical expertise and contributions to game development.
+      <h1 style="line-height: 1.7; text-align: center;"><strong>NOTICE</strong> - This area of the website is still under development come back later to see what i add :)</h1> 
     </div>
-    <ProjectsList v-bind:projects="projects" />
+    <!-- <ProjectsList v-bind:projects="projects" /> -->
   </div>
 </template>
 
-<script lang="ts">
+
+
+<!-- <script lang="ts">
 import Vue from "vue";
 import ProjectsList from "@/components/ProjectsList.vue";
 import otherProjectsData from "@/data/OtherProjectsData.ts";
@@ -25,4 +29,4 @@ export default Vue.extend({
     };
   },
 });
-</script>
+</script> -->
