@@ -49,6 +49,8 @@ export default [
           </div>
         </div>
       
+        <div class="divider"></div>
+
         <div class="content-wrapper-flipped">
           <div class="text-box">
             <h2>Game Save System</h2>
@@ -103,7 +105,7 @@ export default [
 }
     </pre>
         </div>
-      
+        <div class="divider"></div>
         <div class="content-wrapper">
           <div class="text-box">
             <h2>Grid & Placement System</h2>
@@ -117,7 +119,7 @@ export default [
             </video>
           </div>
         </div>
-      
+        <div class="divider"></div>
         <div class="content-wrapper-flipped">
           <div class="text-box">
           <h2>GUI Design</h2>
@@ -138,7 +140,7 @@ export default [
           </div>
         </div>
       </div>
-      
+      <div class="divider"></div>
       <div class="content-wrapper">
         <div class="video-box">
           <video controls width="300" autoplay loop muted playsinline>
@@ -213,6 +215,8 @@ export default [
       </div>
     </div>
   
+    <div class="divider"></div>
+
     <div class="content-wrapper-flipped">
     <div class="text-box">
     <h2>Custom Terrain Tool</h2>
@@ -236,7 +240,9 @@ export default [
         </video>
       </div>
     </div>
-  
+
+    <div class="divider"></div>
+    
     <div class="content-wrapper">
     <div class="text-box">
         <h2>Dynamic Tutorial System</h2>
@@ -254,6 +260,8 @@ export default [
         </video>
       </div>
     </div>
+
+    <div class="divider"></div>
   
     <div class="content-wrapper-flipped">
     <div class="text-box">
@@ -285,6 +293,7 @@ export default [
     </div>
   </div>
   
+  <div class="divider"></div>
   
     <div class="content-wrapper">
       <div class="text-box">
@@ -299,6 +308,9 @@ export default [
       </div>
     </div>
   </div>
+
+  <div class="divider"></div>
+
   <div class="content-wrapper-flipped">
   <div class="text-box">
   <h2>Building System</h2>
@@ -311,6 +323,9 @@ export default [
     </video>
   </div>
 </div>
+
+<div class="divider"></div>
+
 <div class="content-wrapper">
 <div class="text-box">
   <h2>Visibility Shader</h2>
@@ -359,7 +374,7 @@ export default [
   
   <div class="paragraph">
     My key responsibilities in this project included:
-  
+    
     <div class="content-wrapper">
       <div class="text-box">
         <h2>Shop System</h2>
@@ -374,6 +389,8 @@ export default [
         </video>
       </div>
     </div>
+
+    <div class="divider"></div>
   
     <div class="content-wrapper-flipped">
       <div class="text-box">
@@ -390,6 +407,8 @@ export default [
         </video>
       </div>
     </div>
+
+    <div class="divider"></div>
   
     <div class="content-wrapper">
       <div class="text-box">
@@ -405,6 +424,8 @@ export default [
         </video>
       </div>
     </div>
+
+    <div class="divider"></div>
   
     <div class="content-wrapper-flipped">
       <div class="text-box">
@@ -420,6 +441,8 @@ export default [
         </video>
       </div>
     </div>
+
+    <div class="divider"></div>
   
     <div class="content-wrapper">
       <div class="text-box">
@@ -437,6 +460,8 @@ export default [
       </div>
     </div>
   </div>
+
+  <div class="divider"></div>
   
   <div class="content-wrapper">
   
