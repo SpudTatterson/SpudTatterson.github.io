@@ -33,6 +33,8 @@
 import Vue from "vue";
 import hljs from "highlight.js"; // Import Highlight.js library
 import "highlight.js/styles/obsidian.css"; // Import a Highlight.js theme
+// eslint-disable-next-line @typescript-eslint/camelcase
+import { sa_event } from 'simple-analytics-vue';
 
 export default Vue.extend({
   name: "ProjectDetailsOverlay",
@@ -44,9 +46,13 @@ export default Vue.extend({
   },
   mounted() {
     this.highlightCode();
+    this.addScrollTracking(); // Add scroll tracking when the component mounts
   },
   updated() {
     this.highlightCode();
+  },
+  beforeDestroy() {
+    this.removeScrollTracking(); // Clean up event listeners
   },
   methods: {
     highlightCode() {
@@ -54,6 +60,31 @@ export default Vue.extend({
       blocks.forEach((block) => {
         hljs.highlightElement(block as HTMLElement);
       });
+    },
+    addScrollTracking() {
+      const content = this.$el.querySelector(".dialog-content");
+      if (content) {
+        content.addEventListener("scroll", this.trackScrollDepth);
+      }
+    },
+    removeScrollTracking() {
+      const content = this.$el.querySelector(".dialog-content");
+      if (content) {
+        content.removeEventListener("scroll", this.trackScrollDepth);
+      }
+    },
+    trackScrollDepth(event: Event) {
+      const target = event.target as HTMLElement;
+      const scrollTop = target.scrollTop;
+      const scrollHeight = target.scrollHeight - target.clientHeight;
+      const scrollPercentage = Math.round((scrollTop / scrollHeight) * 100);
+
+      // Track the scroll depth
+      sa_event('scroll-depth', {
+        percentage: scrollPercentage,
+        title: this.title,
+      });
+      console.log("Scroll depth tracked:", scrollPercentage);
     },
     getImage(url: string) {
       console.log("fetching image " + url);

@@ -33,6 +33,8 @@
 import Vue from "vue";
 import ProjectDetailsOverlay from "@/components/ProjectDetailsOverlay.vue";
 import ProjectData from "@/data/ProjectData.ts";
+// eslint-disable-next-line @typescript-eslint/camelcase
+import { sa_event } from "simple-analytics-vue"; // Import sa_event
 
 export default Vue.extend({
   name: "ProjectsList",
@@ -59,14 +61,20 @@ export default Vue.extend({
       this.popupColor = item.accentColor;
       this.popupContent = item.htmlDescription;
       this.showPopup = true;
-      window.scrollTo(0,0);
+      window.scrollTo(0, 0);
+
+      // Track the event
+      sa_event("open-overlay", {
+        projectName: item.name,
+        projectId: item.id,
+      });
+      console.log("Project opened");
     },
   },
 });
 </script>
 
 <style scoped>
-
 .project-item {
   height: 300px;
   margin-bottom: 20px;
