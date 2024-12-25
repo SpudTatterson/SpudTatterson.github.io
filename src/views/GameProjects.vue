@@ -1,16 +1,17 @@
 <template>
   <div>
-    <h1>Stuff</h1>
+    <h1 class="centered">Games & Projects</h1>
 
-    <div style="margin-bottom: 30px;">
-      The following are some stuff I've made or heavily contributed to.
+    <div  class ="centered" style="margin-bottom: 30px;">
+      Here are the complete games and related projects I've worked on, including mods and similar endeavors.
     </div>
 
-    <ProjectsList v-bind:projects="projects" />
+      <ProjectsList v-bind:projects="projects" />
 
-    <div style="margin-top: 20px;">
-      There is more to see on <a target="_blank" href="https://someexternalwebsite.com">some external website</a>
-    </div>
+
+    <!-- <div style="margin-top: 20px;">
+      Discover more on <a target="_blank" href="https://someexternalwebsite.com">this external website</a>.
+    </div> -->
   </div>
 </template>
 
@@ -31,3 +32,12 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style scoped>
+.centered {
+  text-align: center;
+}
+h1.centered{
+  margin: 20px;
+}
+</style >
