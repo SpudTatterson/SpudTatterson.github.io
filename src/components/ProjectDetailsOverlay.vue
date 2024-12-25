@@ -138,7 +138,7 @@ h1.dialog-title {
 
 .dialog-content {
   background-color: #17191b;
-  color: #cacaca;
+  /* color: #cacaca; */
 }
 
 .dialog-close {
