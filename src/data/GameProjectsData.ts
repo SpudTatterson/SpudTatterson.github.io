@@ -163,7 +163,7 @@ export default [
         <ul>
           <li><a href="https://www.artstation.com/artwork/Dvgdyy" target="_blank">Aviv Hauyn (Me) - Mechanics, World Gameplay & UI</a></li>
           <li><a href="https://www.artstation.com/artwork/QXAR44" target="_blank">Alex Shevchenko - Effects and Character Gameplay</a></li>
-          <li><a href="https://www.artstation.com/artwork/39KV2Y" target="_blank">Illay Aloni - Environment Art, Sound, Lighting & Level Design</a></li>
+          <li><a href="https://www.artstation.com/artwork/39KV2Y" target="_blank">Ilay Aloni - Environment Art, Sound, Lighting & Level Design</a></li>
           <li><a href="https://www.artstation.com/artwork/04PdN5" target="_blank">Nadav Eisman - Modeling and Environment Art</a></li>
         </ul>
       </div>      
