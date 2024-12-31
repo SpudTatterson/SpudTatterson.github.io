@@ -48,13 +48,13 @@ export default Vue.extend({
   border-radius: 5px;
   height: 10px;
   width: 10px;
-  border: 0px solid @skillRateCircleColor;
+  border: 0px solid @accentColor;
   background-color: transparent;
   opacity: 0.6;
   margin: 0px 2px;
 }
 .circle-full {
-  background-color: @skillRateCircleColor;
+  background-color: @accentColor;
 }
 .circle-empty {
   border-width: 1px;
