@@ -4,13 +4,16 @@
       <!-- Apply v-for to the actual rendered element with a key -->
       <div v-for="project in projects" :key="project.id" @click="showDetails(project)" class="project-item"
         :class="{ 'wide': project.isWide, 'high': project.isHigh }">
-        <!-- Conditionally render video or image -->
+        <!-- Project Image or Video with Blurred Background -->
         <div class="project-item-image">
+          <!-- Blurred Background -->
           <template v-if="project.iconType === 'video'">
+            <video :src="project.iconUrl" autoplay muted loop playsinline class="blurred-background"></video>
             <video :src="project.iconUrl" autoplay muted loop playsinline class="project-video"></video>
           </template>
           <template v-else>
-            <div :style="{ 'background-image': 'url(' + project.iconUrl + ')' }" class="project-image"></div>
+            <div :style="{ 'background-image': 'url(' + project.iconUrl + ')' }" class="blurred-background"></div>
+            <img :src="project.iconUrl" alt="Project Image" class="project-image" />
           </template>
         </div>
         <div class="title-bar" :style="{ 'background-color': project.accentColor + 'DD' }">
@@ -26,6 +29,7 @@
       :htmlContent="popupContent" :color="popupColor" />
   </div>
 </template>
+
 
 
 
@@ -99,15 +103,61 @@ export default Vue.extend({
 }
 
 .project-video {
+  position: relative;
+  z-index: 2;
+  /* Stays above the blurred background */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Keep the aspect ratio */
+}
+
+/* .project-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+  object-position: center;
+} */
+
 
 .project-image {
   height: 100%;
   background-size: cover;
   background-position: center;
+}
+
+/* .project-image {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+} */
+
+.project-item-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Blurred Background */
+.blurred-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px) brightness(0.7);
+  /* Adjust blur and brightness */
+  transform: scale(1.1);
+  /* Slightly enlarge to cover edges */
+  z-index: 1;
+  /* Ensure it stays behind the main video/image */
 }
 
 .project-item:hover {
@@ -118,6 +168,7 @@ export default Vue.extend({
 .title-bar {
   position: absolute;
   top: 0px;
+  z-index: 5;
   width: 100%;
   background-color: #222222;
 }
