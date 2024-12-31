@@ -28,8 +28,8 @@ export default Vue.extend({
 
 // Preload heavy assets used in other pages
 Helpers.preloadAssets([
-    "img/projects/Doodis/Cover.mp4",
-    "img/projects/AlienAnnihilationVE/Cover.mp4",
+    // "img/projects/Doodis/Cover.mp4",
+    // "img/projects/AlienAnnihilationVE/Cover.mp4",
 ]);
 
 
