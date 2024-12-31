@@ -173,7 +173,7 @@ export default [
         true
     )
     ,
-    new ProjectData("project-2", "Skolger", "img/projects/Skolger/Cover.png", "image",
+    new ProjectData("project-2", "Skolger", "img/projects/Skolger/Cover.mp4", "video",
         `
     <div class="paragraph">
     <strong>Skolger</strong> is a project I worked on during my final semester at IAC. This Viking-inspired colony management game features intricate systems that create a deeply engaging experience, despite challenges faced during development.
