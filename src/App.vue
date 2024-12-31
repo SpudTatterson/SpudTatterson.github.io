@@ -64,12 +64,11 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-  color: @textColor;
+  color: @highlightColor;
   text-decoration: none;
-  opacity: 0.5;
 }
 a:hover, .router-link-exact-active {
-  opacity: 1;
+  filter: brightness(1.3);
 }
 
 h1 {
