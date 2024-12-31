@@ -3,7 +3,7 @@
     <h1>Resume</h1>
 
     <div class="paragraph">
-      I'm <strong style="font-family: 'Source Code Pro', monospace;">Aviv Hauyn</strong>, a Unity Game Developer with a solid background in C# programming, Unity
+      I'm <Accent style="font-family: 'Source Code Pro', monospace;">Aviv Hauyn</Accent>, a Unity Game Developer with a solid background in C# programming, Unity
       development, and 3D art.
       I have hands-on experience developing games from start to finish, tackling technical challenges, and delivering
       immersive gameplay experiences.
@@ -116,11 +116,13 @@
 <script lang="ts">
 import Vue from "vue";
 import SkillRate from "@/components/SkillRate.vue";
+import Accent from "@/components/Accent.vue"; // Adjust the import path as necessary
 
 export default Vue.extend({
   name: "Resume",
   components: {
     SkillRate,
+    Accent,
   },
 });
 </script>
