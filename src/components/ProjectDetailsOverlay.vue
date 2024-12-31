@@ -139,12 +139,6 @@ h1.dialog-title {
 .dialog-content {
   background-color: #17191b;
 
-  /* color: #cacaca; */
-  /* Custom scrollbar styling */
-  &::-webkit-scrollbar {
-    width: 12px;
-    /* Width of the scrollbar */
-  }
 
   &::-webkit-scrollbar-track {
     background: #242835;
