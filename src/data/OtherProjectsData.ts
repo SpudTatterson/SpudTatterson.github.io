@@ -1,7 +1,7 @@
 import ProjectData from '@/data/ProjectData.ts'
 
 export default [
-  new ProjectData("project-6", "VAT Shader Animator", "img/projects/VatAnimator/Cover.mp4", "video", `
+  new ProjectData("project-6", "VAT Shader Animator", "img/projects/VATAnimator/Cover.mp4", "video", `
   <div class="paragraph">
   <strong>VAT Animator</strong> is a tool I developed to optimize animation performance in Unity. It enables game developers to run hundreds or thousands of animated characters simultaneously, overcoming the limitations of Unity’s traditional animation system.
 </div>
