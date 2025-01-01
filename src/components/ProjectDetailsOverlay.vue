@@ -139,27 +139,6 @@ h1.dialog-title {
 .dialog-content {
   background-color: #17191b;
 
-
-  &::-webkit-scrollbar-track {
-    background: #242835;
-    /* Color of the track area */
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #474e64;
-    /* Color of the scroll thumb */
-    border-radius: 20px;
-    /* Roundness of the scroll thumb */
-    border: 3px solid #242835;
-    /* Creates padding around scroll thumb */
-  }
-
-  /* For other browsers */
-  scrollbar-color: #474e64 #242835;
-  /* For Firefox */
-  scrollbar-width: thin;
-  /* For Firefox */
-
 }
 
 .dialog-close {
