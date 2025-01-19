@@ -51,7 +51,7 @@
   </div>
 </template>
 
-<script>
+<script lang ="ts">
 import Accent from "@/components/Accent.vue"; // Adjust the import path as necessary
 
 export default {

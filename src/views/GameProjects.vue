@@ -39,5 +39,6 @@ export default Vue.extend({
 }
 h1.centered{
   margin: 20px;
+  font-weight: bold;
 }
 </style >
