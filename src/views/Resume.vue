@@ -180,7 +180,7 @@ h4 {
 }
 
 .full-content div {
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .photo img {
