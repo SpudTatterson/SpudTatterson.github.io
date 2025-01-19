@@ -47,12 +47,22 @@ export default Vue.extend({
   mounted() {
     this.highlightCode();
     this.addScrollTracking(); // Add scroll tracking when the component mounts
+    this.attachLoaderLogic();
+  },
+  watch: {
+    visible(newVal) {
+      // Re-run loader logic when the overlay becomes visible
+      if (newVal) {
+        this.$nextTick(() => this.attachLoaderLogic());
+      }
+    },
   },
   updated() {
     this.highlightCode();
   },
   beforeDestroy() {
     this.removeScrollTracking(); // Clean up event listeners
+    // this.cleanUpLoader();  
   },
   methods: {
     highlightCode() {
@@ -60,6 +70,24 @@ export default Vue.extend({
       blocks.forEach((block) => {
         hljs.highlightElement(block as HTMLElement);
       });
+    },
+    attachLoaderLogic() {
+      // Locate the iframe and loader in the rendered HTML  
+      const iframe = this.$el.querySelector("iframe") as HTMLIFrameElement | null;
+      const loader = this.$el.querySelector("#loader") as HTMLElement | null;
+
+      if (!iframe || !loader) return;
+
+      // Attach the onload event to hide the loader
+      iframe.onload = () => {
+        loader.style.display = "none"; // Hide the loader when iframe finishes loading
+      };
+    },
+    cleanUpLoader() {
+      const loader = this.$el.querySelector("#loader") as HTMLElement | null;
+      if (loader) {
+        loader.style.display = "none";
+      }
     },
     addScrollTracking() {
       const content = this.$el.querySelector(".dialog-content");
