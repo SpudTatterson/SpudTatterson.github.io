@@ -23,13 +23,19 @@ export default [
       Explore the VAT Animator’s capabilities with an interactive WebGL demo. See how it handles animation baking, blending, and optimized performance for large-scale scenes.
     </p>
 
-    <iframe 
-    src="./webGL/vat/index.html" 
-    width="100%" 
-    height="600px" 
-    allowfullscreen
-    style="border:none;">
-  </iframe>
+    <div>
+    <div id="loader">
+      <img src="loading.gif" alt="Loading...">
+    </div>
+    <iframe
+      src="./webGL/vat/index.html"
+      width="100%"
+      height="600px"
+      allowfullscreen
+      style="border:none;"
+      onload="hideLoader()">
+    </iframe>
+    </div>
 
 <div class="divider"></div>
 

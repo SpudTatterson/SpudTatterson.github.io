@@ -343,7 +343,7 @@ export default [
   
   
                             `, "#0c6654", true, true),
-    new ProjectData("project-3", "Alien Annihilation : Village Editon",
+    new ProjectData("project-3", "Alien Annihilation : Village Edition",
         "img/projects/AlienAnnihilationVE/Cover.mp4", "video",
         `
     <div class="paragraph">
@@ -358,7 +358,7 @@ export default [
       <li><strong>Weapons:</strong> Equip guns and a powerful rocket launcher to obliterate enemies and structures.</li>
       <li><strong>Traction Beam:</strong> Pick up and manipulate objects and enemies, adding a strategic layer to gameplay.</li>
       <li><strong>Building Destruction:</strong> Bring buildings crumbling down to ensure no structure is left standing.</li>
-      <li><strong>Enemy Units:</strong> Battle medieval defenses, including catapults and ballistas, for a unique clash of technologies.</li>
+      <li><strong>Enemy Units:</strong> Battle medieval defenses, including catapults and ballistae, for a unique clash of technologies.</li>
     </ul>
   </div>
   
@@ -448,7 +448,7 @@ export default [
       <div class="text-box">
         <h2>Enemy Units</h2>
         <p>
-            Designed and implemented <strong>enemy units</strong>, including catapults that launch both giant rocks and explosives, as well as ballistas, creating a unique clash between medieval defenses and alien technology.
+            Designed and implemented <strong>enemy units</strong>, including catapults that launch both giant rocks and explosives, as well as ballistae, creating a unique clash between medieval defenses and alien technology.
         </p>
 
       </div>
