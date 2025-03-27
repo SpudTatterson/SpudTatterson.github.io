@@ -18,7 +18,7 @@
     <div style="clear:both"></div>
 
     <div style="margin-top:20px; margin-bottom:20px; text-align:center;">
-      <a class="download-link" href="d/Aviv_Hauyn_Unity_Dev.pdf" target="_blank">
+      <a class="download-link" href="d/Aviv_Hauyn_Unity_Dev.pdf" data-goatcounter-click="ResumeDownload" target="_blank">
         <i class="fa fa-download fa-lg fa-fw"></i> Download as PDF
       </a>
     </div>
