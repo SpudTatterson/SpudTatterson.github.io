@@ -8,7 +8,7 @@ export default [
 
 
   <div class="paragraph center">
-    <a href="/downloads/MetallicTexturePacker.unitypackage" data-goatcounter-click="MetallicDownload" target="_blank">
+    <a href="/download/MetallicTexturePacker.unitypackage" data-goatcounter-click="MetallicDownload" target="_blank">
       <img src="img/Download.png" alt="itch badge" style="width: auto; height: 170px; border-radius: 20px" />
     </a>
   </div>
