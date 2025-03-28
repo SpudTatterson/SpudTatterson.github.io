@@ -31,6 +31,11 @@ const routes: Array<RouteConfig> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/OtherProjects.vue')
   },
   {
+    path: '/free-tools',
+    name: 'Free Tools',
+    component: () => import(/* webpackChunkName: "about" */ '../views/FreeTools.vue')
+  },
+  {
     path: '/contact',
     name: 'Contact',
     component: () => import(/* webpackChunkName: "about" */ '../views/Contact.vue')

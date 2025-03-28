@@ -12,7 +12,7 @@
             <video :src="project.iconUrl" autoplay muted loop playsinline class="project-video"></video>
           </template>
           <template v-else>
-            <div :style="{ 'background-image': 'url(' + project.iconUrl + ')' }" class="blurred-background"></div>
+            <!-- <div :style="{ 'background-image': 'url(' + project.iconUrl + ')' }" class="blurred-background"></div> -->
             <img :src="project.iconUrl" alt="Project Image" class="project-image" />
           </template>
         </div>
@@ -122,6 +122,7 @@ export default Vue.extend({
 
 .project-image {
   height: 100%;
+  width:  100%;
   background-size: cover;
   background-position: center;
 }
