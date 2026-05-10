@@ -3,12 +3,10 @@
     <h1>Resume</h1>
 
     <div class="paragraph">
-      I'm <Accent style="font-family: 'Source Code Pro', monospace;">Aviv Hauyn</Accent>, a Unity Game Developer with a solid background in C# programming, Unity
-      development, and 3D art.
-      I have hands-on experience developing games from start to finish, tackling technical challenges, and delivering
-      immersive gameplay experiences.
-      My journey started as a 3D Artist in the Israeli Air Force, and today, I help others as a Unity Tutor while building
-      innovative tools and systems in game development.
+      I'm <Accent style="font-family: 'Source Code Pro', monospace;">Aviv Hauyn</Accent>, a Unity Developer with
+      production experience across mobile puzzle games, gameplay-facing systems, SDK integrations, monetization,
+      analytics, and backend-connected features. My work combines hands-on Unity/C# implementation with systems thinking
+      across live operations, game logic, and production debugging.
     </div>
 
     <div class="photo">
@@ -26,24 +24,40 @@
     <div class="full-content">
       <h2>Work Experience</h2>
 
-      <h3>Unity Developer - Freelance</h3>
+      <h3>Freelance Unity Developer - Spark Games & more</h3>
       <h4>2024 - Present</h4>
       <div>
-        - Collaborating with both recurring clients and one-time projects. <br />
-        - Adding new features, debugging, and optimizing Unity projects to improve performance and user experience. <br />
-        - Providing consultation on game design decisions to enhance the overall design quality.
+        - Collaborating with recurring clients and one-time freelance projects across Unity mobile games, tools, and
+        interactive systems. <br />
+        - Worked on production Unity mobile puzzle games including <a
+          href="https://play.google.com/store/apps/details?id=com.SparksGames.JumWorldMatchPuzzleGame"
+          target="_blank">Candy Match - Dream Factory</a>, <a
+          href="https://play.google.com/store/apps/details?id=com.sparksgames.blockesacape3d" target="_blank">Block
+          Escape 3D</a>, and <a href="https://play.google.com/store/apps/details?id=com.sparkgames.rushbustation"
+          target="_blank">Bus Rush - Puzzle Game</a>. <br />
+        - Integrated and maintained Firebase, Adjust, IronSource LevelPlay, AppLovin MAX, analytics, messaging,
+        attribution, monetization, and live operations systems. <br />
+        - Implemented gameplay-adjacent features such as daily rewards, win-streak rewards, remote-config-driven
+        popups, production UI flows, and backend-connected reward logic. <br />
+        - Designed and developed a serverless AWS backend supporting wallet/account flows, offerwall rewards, purchase
+        verification, game reward logic, admin tools, and third-party integrations. <br />
+        - Built and maintained production systems across 8 mobile game configurations, with backend traffic reaching
+        millions of Lambda invocations in a day. <br />
+        - Developing and optimizing physiotherapy-focused Unity games under NDA, using Kinect and Femto depth cameras
+        for motion-based interaction and real-time player feedback.
       </div>
       <div class="tech-stack">
-        Tools: Unity, VSCode.
+        Tools: Unity, C#, Firebase, Adjust, IronSource LevelPlay, AppLovin MAX, AWS Lambda, DynamoDB, S3, API Gateway,
+        Python, Kinect, Femto.
       </div>
 
 
       <h3>Unity Tutor - IAC College</h3>
       <h4>2024 - Present</h4>
       <div>
-        - Instructing students on Unity development, C# programming, game mechanics, and object-oriented
-        programming.<br />
-        - Assisting with debugging, optimization, and game design practices.
+        - Supporting Unity students with C# programming, game mechanics, object-oriented programming, and project
+        structure.<br />
+        - Helping students debug issues, improve performance, and approach technical problems more effectively.
       </div>
       <div class="tech-stack">
         Tools: Unity, VSCode, Blender, Substance Painter.
@@ -70,6 +84,7 @@
           <h3>Development</h3>
           <SkillRate name="Unity" :rate="5" />
           <SkillRate name="C# Programming" :rate="4" />
+          <SkillRate name="Async Coding" :rate="4" />
           <SkillRate name="OOP" :rate="4" />
           <SkillRate name="Design Patterns" :rate="4" />
           <SkillRate name="Shaders" :rate="3" />
@@ -77,17 +92,21 @@
         </div>
 
         <div class="skill-group">
-          <h3>3D Art Tools</h3>
-          <SkillRate name="Blender" :rate="4" />
-          <SkillRate name="Substance Painter" :rate="4" />
-          <SkillRate name="Photoshop" :rate="4" />
+          <h3>Mobile & LiveOps</h3>
+          <SkillRate name="Firebase" :rate="4" />
+          <SkillRate name="Remote Config" :rate="4" />
+          <SkillRate name="Analytics" :rate="4" />
+          <SkillRate name="Adjust" :rate="4" />
+          <SkillRate name="Ad Mediation" :rate="4" />
         </div>
 
         <div class="skill-group">
-          <h3>Project Management</h3>
+          <h3>Backend & Tools</h3>
+          <SkillRate name="AWS Lambda" :rate="4" />
+          <SkillRate name="DynamoDB" :rate="4" />
+          <SkillRate name="Python" :rate="4" />
           <SkillRate name="Git Version Control" :rate="4" />
-          <SkillRate name="Trello" :rate="4" />
-          <SkillRate name="Milanote" :rate="4" />
+          <SkillRate name="Blender" :rate="4" />
         </div>
       </div>
 
