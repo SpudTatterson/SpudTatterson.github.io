@@ -21,7 +21,7 @@
           <p class="hero-description">
             A fast-paced, low-poly multiplayer party shooter where every hit kills
             and every match evolves. Every few rounds, the whole lobby votes on a
-            modifier that changes the rules—so no two games play the same.
+            modifier that changes the rules, so no two games play the same.
           </p>
           <div class="platform-line" aria-label="Planned platforms">
             <span>Coming first to <strong>Steam</strong></span>
@@ -51,7 +51,7 @@
           <h2>Vote. Adapt.<br>Wreck.</h2>
           <p>
             Bright low-poly arenas and colorful characters collide with lethal
-            weapons and split-second fights. Every shot matters. Between bursts of
+            weapons and split second fights. Every shot matters. Between bursts of
             combat, the whole lobby votes on what happens next.
           </p>
           <p>
@@ -59,13 +59,13 @@
             has to survive the consequences. Learn the new rules fast—or get wrecked.
           </p>
           <p>
-            Step into the match as a Geck—a chaotic species all its own. The final
-            release is planned to include hats, skin colors, and more ways to make
-            your Geck yours.
+            Pick your Geck and make it your own. Character customization is planned
+            for the full release, with hats, skin colors, and more ways to stand out
+            in every match.
           </p>
         </div>
         <aside class="status-card">
-          <p class="card-label">Project status</p>
+          <p class="card-label">Game details</p>
           <div><span>Genre</span><strong>Party shooter</strong></div>
           <div><span>Combat</span><strong>One-hit kills</strong></div>
           <div><span>Customization</span><strong>Planned</strong></div>
@@ -335,7 +335,8 @@ footer { min-height: 115px; color: fade(@textColor, 56%); font-size: .68rem; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; }
   .hero-art { width: 88vw; max-width: 680px; justify-self: center; order: -1; }
-  .hero h1 { margin-top: -8vh; position: relative; text-shadow: 0 5px 22px @contentBgColor; font-size: clamp(4.5rem, 18vw, 8.5rem); }
+  .hero-copy { width: 100%; }
+  .hero h1 { margin-top: 24px; position: relative; font-size: clamp(4.5rem, 18vw, 8.5rem); }
   .about { grid-template-columns: 1fr; }
   .status-card { max-width: 520px; }
   .media-grid { grid-template-columns: 1fr 1fr; }
@@ -346,7 +347,8 @@ footer { min-height: 115px; color: fade(@textColor, 56%); font-size: .68rem; }
 @media (max-width: 620px) {
   nav a:not(.nav-cta) { display: none; }
   .hero-art { width: 104vw; margin-left: -8vw; }
-  .hero h1 { margin-top: -7vh; font-size: 19vw; }
+  .hero h1 { margin-top: 20px; font-size: 19vw; line-height: .88; }
+  .eyebrow { line-height: 1.35; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
   .status-strip span:last-child, .status-strip i:last-of-type { display: none; }
   .section { padding: 90px 0; }
