@@ -2,6 +2,9 @@
 node_modules
 /dist
 
+# Local source footage is hosted on YouTube for the GECK WRECKED page.
+/public/geck-wrecked/Gameplay.mp4
+
 
 # local env files
 .env.local
