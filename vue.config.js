@@ -9,13 +9,13 @@ module.exports = {
       entry: 'src/geck-wrecked/main.ts',
       template: 'public/geck-wrecked.html',
       filename: 'geck-wrecked/index.html',
-      title: 'Geck Wrecked — Coming Soon'
+      title: 'GECK WRECKED — Coming Soon'
     },
     geckWreckedCheckEmail: {
       entry: 'src/geck-wrecked/confirmation.ts',
       template: 'public/geck-wrecked-confirmation.html',
       filename: 'geck-wrecked/check-email/index.html',
-      title: 'Check Your Inbox — GECK WRECKED'
+      title: 'Check Your Email — GECK WRECKED'
     },
     geckWreckedConfirmed: {
       entry: 'src/geck-wrecked/confirmation.ts',

@@ -13,6 +13,7 @@
         <p class="eyebrow">Subscription confirmed</p>
         <div class="status-icon confirmed" aria-hidden="true">✓</div>
         <h1>You’re<br><strong>in.</strong></h1>
+        <h1><strong>Thank You.</strong></h1>
         <p>
           You’re officially on the list. You’ll only receive the GECK WRECKED
           updates you selected.
@@ -23,14 +24,26 @@
       <div v-else class="message">
         <p class="eyebrow">One more step</p>
         <div class="status-icon" aria-hidden="true">@</div>
-        <h1>Check your<br><strong>inbox.</strong></h1>
+        <h1>Check your<br><strong>email.</strong></h1>
         <p>
-          We sent you a confirmation email. Click the link inside to lock in your
-          selected GECK WRECKED updates.
+          We sent a confirmation link to the email address you entered. Open it
+          and click <strong>Confirm my subscription</strong> to join the list.
         </p>
-        <p class="hint">
-          Can’t find it? Check your spam or promotions folder. Delivery may take a minute.
-        </p>
+
+        <aside class="delivery-note">
+          <p class="delivery-title">Can’t see the email?</p>
+          <ul>
+            <li><span aria-hidden="true">01</span> Check your inbox</li>
+            <li><span aria-hidden="true">02</span> Check Promotions</li>
+            <li class="spam"><span aria-hidden="true">03</span> Check your spam folder</li>
+          </ul>
+          <p class="hint">
+            It may take a few minutes to arrive. The sender is
+            <strong>updates@avivhauyn.com</strong>. If it is in Spam, please mark it as
+            “Not spam”.
+          </p>
+        </aside>
+
         <a class="button" href="/geck-wrecked/">Back to the game <span>↗</span></a>
       </div>
     </section>
@@ -112,9 +125,18 @@ html, body { min-height: 100%; margin: 0; background: @bodyBgColor; }
 .status-icon { width: 64px; height: 64px; margin: 24px 0; border-radius: 50%; display: grid; place-items: center; background: @highlightColor; color: white; font: 400 1.45rem 'Lilita One', sans-serif; transform: rotate(-7deg); }
 .status-icon.confirmed { background: @geckGreen; color: @contentBgColor; }
 h1 { margin: 0; font: 400 clamp(4rem, 11vw, 7.5rem)/.82 'Lilita One', sans-serif; text-transform: uppercase; letter-spacing: -.025em; }
-h1 strong { color: @highlightColor; font-weight: 400; }
+h1 strong   { color: @highlightColor; font-weight: 400; }
 .message > p:not(.eyebrow):not(.hint) { max-width: 570px; margin: 34px 0 0; color: fade(@textColor, 76%); font-size: 1.04rem; line-height: 1.7; }
-.hint { max-width: 570px; margin: 16px 0 0; color: fade(@textColor, 48%); font-size: .78rem; line-height: 1.55; }
+.message > p strong { color: @textColor; }
+.delivery-note { max-width: 570px; margin-top: 28px; padding: 22px; border: 1px solid fade(@accentColor, 32%); background: fade(@bodyBgColor, 52%); }
+.delivery-title { margin: 0 0 15px; color: @accentColor; font: 400 1.2rem 'Lilita One', sans-serif; letter-spacing: .02em; text-transform: uppercase; }
+.delivery-note ul { margin: 0; padding: 0; display: grid; gap: 8px; list-style: none; }
+.delivery-note li { padding: 10px 12px; display: flex; align-items: center; gap: 12px; background: fade(@textColor, 6%); color: fade(@textColor, 78%); font-size: .9rem; font-weight: 700; }
+.delivery-note li span { color: @geckGreen; font-size: .68rem; letter-spacing: .08em; }
+.delivery-note li.spam { background: fade(@highlightColor, 15%); color: @textColor; }
+.delivery-note li.spam span { color: @highlightColor; }
+.hint { margin: 16px 0 0; color: fade(@textColor, 60%); font-size: .78rem; line-height: 1.6; }
+.hint strong { color: @textColor; overflow-wrap: anywhere; }
 .button { min-width: 220px; margin-top: 36px; padding: 15px 18px; display: inline-flex; justify-content: space-between; gap: 30px; background: @accentColor; color: @contentBgColor; box-shadow: 6px 6px 0 @highlightColor; text-decoration: none; text-transform: uppercase; letter-spacing: .06em; font-size: .7rem; font-weight: 800; }
 .shape { position: absolute; aspect-ratio: 1; transform: rotate(20deg); }
 .shape-one { width: 34vw; max-width: 480px; left: -15vw; top: -12vw; background: @geckGreen; clip-path: polygon(50% 0, 100% 25%, 82% 83%, 20% 100%, 0 33%); opacity: .7; }
@@ -124,5 +146,6 @@ h1 strong { color: @highlightColor; font-weight: 400; }
   .confirmation-page { padding: 20px; }
   .confirmation-card { width: 100%; padding: 28px 24px 40px; box-shadow: 8px 9px 0 fade(@bodyBgColor, 55%); }
   .message { margin-top: 55px; }
+  .delivery-note { padding: 18px; }
 }
 </style>
