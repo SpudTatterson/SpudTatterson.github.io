@@ -94,12 +94,12 @@
             <p>Gameplay footage <em>Work in progress</em></p>
           </article>
           <article class="media-card">
-            <img class="media-image" src="/geck-wrecked/Voting_Stage.png" alt="The modifier voting stage in GECK WRECKED">
-            <p>Voting stage <em>Choose the next rule</em></p>
+            <img class="media-image" src="/geck-wrecked/Forest_Map.png" alt="Three Gecks battling in a forest arena">
+            <p>Forest arena <em>Fight among the ruins</em></p>
           </article>
           <article class="media-card">
-            <div class="placeholder behind"><b>02</b></div>
-            <p>Behind the scenes <em>Under wraps</em></p>
+            <img class="media-image" src="/geck-wrecked/Island_Map.png" alt="Three Gecks battling on a tropical island arena">
+            <p>Island arena <em>Watch your step</em></p>
           </article>
         </div>
       </section>
