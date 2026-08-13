@@ -84,7 +84,7 @@
           <article class="media-card feature">
             <div class="video-embed">
               <iframe
-                src="https://www.youtube-nocookie.com/embed/R1RM-76aQcE?rel=0"
+                src="https://www.youtube-nocookie.com/embed/fKN2s1GXaAs?rel=0"
                 title="GECK REKT gameplay footage"
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
