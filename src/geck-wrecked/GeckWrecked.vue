@@ -1,9 +1,9 @@
 <template>
   <div class="game-page" id="top">
     <header class="game-header">
-      <a class="wordmark" href="#top" aria-label="Geck Wrecked home">
-        <span class="wordmark-mark" aria-hidden="true"></span>
-        GECK WRECKED
+      <a class="wordmark" href="#top" aria-label="Geck Rekt home">
+        <img src="/geck-wrecked/LogoBox.png" alt="">
+        <span>GECK REKT</span>
       </a>
       <nav aria-label="Page navigation">
         <a href="#about">About</a>
@@ -15,8 +15,9 @@
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span>One hit. New rules. Every match.</p>
-          <h1 id="hero-title">GECK<br><strong>WRECKED</strong></h1>
+          <p class="eyebrow"><span></span>One hit. New rules. You decide.</p>
+          <h1 id="hero-title" class="sr-only">GECK REKT</h1>
+          <img class="hero-logo" src="/geck-wrecked/LogoWide.png" alt="GECK REKT">
           <p class="hero-line">Pull the trigger. Change the game.</p>
           <p class="hero-description">
             A fast-paced, low-poly multiplayer party shooter where every hit kills
@@ -55,8 +56,8 @@
             combat, the whole lobby votes on what happens next.
           </p>
           <p>
-            Fewer weapon spawns? Randomized timing? The players decide, then everyone
-            has to survive the consequences. Learn the new rules fast—or get wrecked.
+            Fewer weapon spawns? Exploding dead players? The players decide, then everyone
+            has to survive the consequences. Learn the new rules fast, or get rekt.
           </p>
           <p>
             Pick your Geck and make it your own. Character customization is planned
@@ -84,7 +85,7 @@
             <div class="video-embed">
               <iframe
                 src="https://www.youtube-nocookie.com/embed/R1RM-76aQcE?rel=0"
-                title="GECK WRECKED gameplay footage"
+                title="GECK REKT gameplay footage"
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
@@ -119,7 +120,7 @@
           data-type="subscription"
           @submit="validateSignup"
         >
-          <label for="email">Get only the GECK WRECKED news you care about.</label>
+          <label for="email">Get only the GECK REKT news you care about.</label>
           <div class="input-row">
             <input id="email" v-model="email" type="email" name="EMAIL" autocomplete="email" placeholder="YOUR EMAIL ADDRESS" required>
           </div>
@@ -140,8 +141,8 @@
     </main>
 
     <footer>
-      <span class="wordmark"><span class="wordmark-mark" aria-hidden="true"></span>GECK WRECKED</span>
-      <p>© {{ currentYear }} GECK WRECKED. All rights reserved.</p>
+      <span class="wordmark"><img src="/geck-wrecked/LogoBox.png" alt=""><span>GECK REKT</span></span>
+      <p>© {{ currentYear }} GECK REKT. All rights reserved.</p>
     </footer>
   </div>
 </template>
@@ -179,7 +180,7 @@ export default Vue.extend({
 <style lang="less">
 @import '../css/variables.less';
 
-// GECK WRECKED uses the portfolio's shared layout foundation with its own game palette.
+// GECK REKT uses the portfolio's shared layout foundation with its own game palette.
 @bodyBgColor: #131713;
 @contentBgColor: #222820;
 @textColor: #f6f0d5;
@@ -225,13 +226,8 @@ body { margin: 0; background: @bodyBgColor; }
   letter-spacing: .05em;
 }
 
-.wordmark-mark {
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-  background: @accentColor;
-  clip-path: polygon(8% 18%, 66% 0, 100% 38%, 76% 100%, 19% 85%, 0 53%);
-}
+.wordmark img { width: 34px; height: 34px; border-radius: 8px; object-fit: cover; }
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 nav { display: flex; align-items: center; gap: 38px; }
 nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .08em; font-size: .7rem; font-weight: 750; }
@@ -258,8 +254,7 @@ nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .08em;
 }
 .eyebrow { display: flex; gap: 12px; align-items: center; }
 .eyebrow span { width: 36px; height: 2px; background: @accentColor; }
-.hero h1 { font-size: clamp(5rem, 10.5vw, 9.5rem); font-weight: 400; margin: 7vh 0 4vh; }
-.hero h1 strong { color: @highlightColor; font-weight: 400; }
+.hero-logo { width: 100%; max-width: 630px; margin: 5vh 0 3vh; display: block; border: 0; border-radius: 0; transform: rotate(-2.5deg); box-shadow: none; }
 .hero-line { margin: 0 0 10px; font-size: clamp(1.3rem, 2vw, 1.8rem); font-weight: 650; }
 .hero-description { max-width: 580px; color: fade(@textColor, 72%); font-size: .98rem; }
 .platform-line { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
@@ -269,13 +264,13 @@ nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .08em;
 .button { min-width: 215px; padding: 15px 18px; display: inline-flex; justify-content: space-between; background: @accentColor; color: @contentBgColor !important; box-shadow: 6px 6px 0 @highlightColor; text-decoration: none; text-transform: uppercase; letter-spacing: .06em; font-size: .7rem; font-weight: 750; }
 .text-link { font-size: .7rem; font-weight: 750; text-transform: uppercase; text-underline-offset: 6px; }
 
-.hero-art { width: 46vw; max-width: 620px; aspect-ratio: 16 / 10; position: relative; justify-self: end; transform: rotate(1.5deg); box-shadow: 14px 16px 0 @bodyBgColor; }
+.hero-art { width: 46vw; max-width: 620px; aspect-ratio: 16 / 10; position: relative; justify-self: end; transform: rotate(3.5deg); box-shadow: 14px 16px 0 @bodyBgColor; }
 .hero-art > img { width: 100%; height: 100%; display: block; object-fit: cover; }
 .hero-art::after { content: ''; position: absolute; inset: 0; border: 2px solid fade(@textColor, 16%); pointer-events: none; }
 .sticker { position: absolute; right: -1%; top: 9%; width: 78px; height: 78px; border-radius: 50%; display: grid; place-items: center; background: @textColor; color: @contentBgColor; text-align: center; font-weight: 900; line-height: .9; transform: rotate(10deg); }
 .image-tag { position: absolute; left: 14px; bottom: 14px; padding: 7px 10px; background: @contentBgColor; color: @textColor; font-size: .58rem; font-weight: 800; letter-spacing: .1em; }
 
-.status-strip { padding: 14px 4vw; display: flex; justify-content: center; gap: 34px; background: @accentColor; color: @contentBgColor; text-transform: uppercase; font-size: .75rem; font-weight: 800; letter-spacing: .08em; transform: rotate(-1deg) scale(1.02); }
+.status-strip { padding: 14px 4vw; display: flex; justify-content: center; gap: 34px; background: @accentColor; color: @contentBgColor; text-transform: uppercase; font-size: .75rem; font-weight: 800; letter-spacing: .08em; transform: rotate(-2.5deg) scale(1.04); }
 .status-strip i { color: @contentBgColor; font-style: normal; }
 
 .section { width: 92vw; max-width: 1200px; margin: 0 auto; padding: 130px 0; }
@@ -284,7 +279,7 @@ nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .08em;
 .kicker { color: @accentColor; margin: 0 0 24px; }
 .about h2, .media h2, .updates h2 { font-size: clamp(3.2rem, 6vw, 6.2rem); }
 .about-copy > p:not(.kicker) { color: fade(@textColor, 72%); max-width: 640px; font-size: .98rem; }
-.status-card { padding: 26px; border: 1px solid fade(@textColor, 18%); background: fade(@bodyBgColor, 22%); transform: rotate(1deg); }
+.status-card { padding: 26px; border: 1px solid fade(@textColor, 18%); background: fade(@bodyBgColor, 22%); transform: rotate(3deg); }
 .card-label { color: fade(@textColor, 58%); margin: 0 0 20px; }
 .status-card > div { padding: 10px 0; display: flex; justify-content: space-between; border-bottom: 1px solid fade(@textColor, 14%); font-size: .82rem; }
 .status-card strong { color: @accentColor; text-transform: uppercase; font-size: .68rem; }
@@ -336,7 +331,7 @@ footer { min-height: 115px; color: fade(@textColor, 56%); font-size: .68rem; }
   .hero { grid-template-columns: 1fr; }
   .hero-art { width: 88vw; max-width: 680px; justify-self: center; order: -1; }
   .hero-copy { width: 100%; }
-  .hero h1 { margin-top: 24px; position: relative; font-size: clamp(4.5rem, 18vw, 8.5rem); }
+  .hero-logo { margin-top: 24px; }
   .about { grid-template-columns: 1fr; }
   .status-card { max-width: 520px; }
   .media-grid { grid-template-columns: 1fr 1fr; }
@@ -347,7 +342,7 @@ footer { min-height: 115px; color: fade(@textColor, 56%); font-size: .68rem; }
 @media (max-width: 620px) {
   nav a:not(.nav-cta) { display: none; }
   .hero-art { width: 104vw; margin-left: -8vw; }
-  .hero h1 { margin-top: 20px; font-size: 19vw; line-height: .88; }
+  .hero-logo { width: 100%; margin-top: 20px; border-radius: 0; box-shadow: none; }
   .eyebrow { line-height: 1.35; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
   .status-strip span:last-child, .status-strip i:last-of-type { display: none; }

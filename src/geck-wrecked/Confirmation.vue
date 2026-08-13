@@ -5,8 +5,8 @@
 
     <section class="confirmation-card">
       <a class="wordmark" href="/geck-wrecked/">
-        <span class="wordmark-mark" aria-hidden="true"></span>
-        GECK WRECKED
+        <img src="/geck-wrecked/LogoBox.png" alt="">
+        <span>GECK REKT</span>
       </a>
 
       <div v-if="isConfirmed" class="message">
@@ -15,7 +15,7 @@
         <h1>You’re<br><strong>in.</strong></h1>
         <h1><strong>Thank You.</strong></h1>
         <p>
-          You’re officially on the list. You’ll only receive the GECK WRECKED
+          You’re officially on the list. You’ll only receive the GECK REKT
           updates you selected.
         </p>
         <a class="button" href="/geck-wrecked/">Back to the game <span>↗</span></a>
@@ -112,13 +112,7 @@ html, body { min-height: 100%; margin: 0; background: @bodyBgColor; }
   text-decoration: none;
 }
 
-.wordmark-mark {
-  width: 22px;
-  height: 22px;
-  display: inline-block;
-  background: @geckGreen;
-  clip-path: polygon(8% 18%, 66% 0, 100% 38%, 76% 100%, 19% 85%, 0 53%);
-}
+.wordmark img { width: 42px; height: 42px; border-radius: 10px; object-fit: cover; }
 
 .message { margin-top: clamp(55px, 9vh, 100px); }
 .eyebrow { color: @accentColor; text-transform: uppercase; font-size: .68rem; font-weight: 800; letter-spacing: .16em; }
