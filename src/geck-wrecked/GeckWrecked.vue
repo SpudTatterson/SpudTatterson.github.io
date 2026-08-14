@@ -20,7 +20,7 @@
           <img class="hero-logo" src="/geck-wrecked/LogoWide.png" alt="GECK REKT">
           <p class="hero-line">Pull the trigger. Change the game.</p>
           <p class="hero-description">
-            A fast-paced, low-poly multiplayer party shooter where every hit kills
+            A fast paced, stylized multiplayer party shooter where every hit kills
             and every match evolves. Every few rounds, the whole lobby votes on a
             modifier that changes the rules, so no two games play the same.
           </p>
@@ -48,10 +48,10 @@
       <section class="about section" id="about">
         <div class="section-label">01 / About</div>
         <div class="about-copy">
-          <p class="kicker">Cute faces. Real guns. Zero hit points.</p>
+          <p class="kicker">Cute faces. Wild weapons. Zero hit points.</p>
           <h2>Vote. Adapt.<br>Wreck.</h2>
           <p>
-            Bright low-poly arenas and colorful characters collide with lethal
+            Bright arenas and colorful characters collide with lethal
             weapons and split second fights. Every shot matters. Between bursts of
             combat, the whole lobby votes on what happens next.
           </p>
@@ -59,6 +59,13 @@
             Fewer weapon spawns? Exploding dead players? The players decide, then everyone
             has to survive the consequences. Learn the new rules fast, or get rekt.
           </p>
+          <div class="tongue-callout">
+            <strong>Weaponize your tongue.</strong>
+            <p>
+              Land a lick to make an enemy drop their weapon, snatch them and fling
+              them across the map, or launch rocks, barrels, and anything else in reach.
+            </p>
+          </div>
           <p>
             Pick your Geck and make it your own. Character customization is planned
             for the full release, with hats, skin colors, and more ways to stand out
@@ -69,9 +76,10 @@
           <p class="card-label">Game details</p>
           <div><span>Genre</span><strong>Party shooter</strong></div>
           <div><span>Combat</span><strong>One-hit kills</strong></div>
+          <div><span>Tongue</span><strong>Disarm, grab &amp; fling</strong></div>
           <div><span>Customization</span><strong>Planned</strong></div>
           <div><span>Launch platform</span><strong>Steam</strong></div>
-          <small>Console versions are planned for later.</small>
+          <small>Console versions are planned for the future.</small>
         </aside>
       </section>
 
@@ -279,6 +287,9 @@ nav a { text-decoration: none; text-transform: uppercase; letter-spacing: .08em;
 .kicker { color: @accentColor; margin: 0 0 24px; }
 .about h2, .media h2, .updates h2 { font-size: clamp(3.2rem, 6vw, 6.2rem); }
 .about-copy > p:not(.kicker) { color: fade(@textColor, 72%); max-width: 640px; font-size: .98rem; }
+.tongue-callout { max-width: 640px; margin: 32px 0 38px; padding: 22px 24px; border: 2px solid @accentColor; background: @highlightColor; color: white; transform: rotate(-3deg); box-shadow: 8px 9px 0 @bodyBgColor; }
+.tongue-callout strong { display: block; font-family: 'Lilita One', 'Roboto', sans-serif; font-size: 1.7rem; font-weight: 400; line-height: 1; letter-spacing: .01em; text-transform: uppercase; }
+.tongue-callout p { margin: 12px 0 0; font-size: .9rem; line-height: 1.55; }
 .status-card { padding: 26px; border: 1px solid fade(@textColor, 18%); background: fade(@bodyBgColor, 22%); transform: rotate(3deg); }
 .card-label { color: fade(@textColor, 58%); margin: 0 0 20px; }
 .status-card > div { padding: 10px 0; display: flex; justify-content: space-between; border-bottom: 1px solid fade(@textColor, 14%); font-size: .82rem; }
